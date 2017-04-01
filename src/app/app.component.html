@@ -1,3 +1,27 @@
-<h1>
-  {{title}}
-</h1>
+<nav>
+  <div class="nav-wrapper">
+    <a [routerLink]="['/']" class="brand-logo">
+      <cl-image public-id="cloudinary_logo" title="Cloudinary Demo" width="200">
+      </cl-image>
+    </a>
+  </div>
+</nav>
+<div class="outer-outlet container">
+  <router-outlet></router-outlet>
+</div>
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Angular 2 Progressive Web App Demo</h5>
+        <p class="grey-text text-lighten-4">See how to super charge your Angular 2 app by following the tenets of Progressive Web Apps and using service worker progressively.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2017 Copyright Cloudinary
+    <a class="grey-text text-lighten-4 right" href="https://elsmore.me">Made with &#9829; by Mike Elsmore</a>
+    </div>
+  </div>
+</footer>
