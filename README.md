@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Angular2CloudinaryProgressiveWebApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
@@ -27,7 +26,3 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
-# angular2-cloudinary-progressive-web-app
-How to take an angular app to the next level with the principles of Progressive Web Apps
->>>>>>> 82737afadc1a6401c27a2f3013563f0dc15fa38a
