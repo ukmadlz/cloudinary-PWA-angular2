@@ -5,8 +5,8 @@ import { HttpModule } from '@angular/http';
 
 import { RouterModule } from '@angular/router';
 
-import { Cloudinary } from 'cloudinary-core';
 import { CloudinaryModule } from '@cloudinary/angular';
+import { Cloudinary } from 'cloudinary-core/cloudinary-core-shrinkwrap';
 
 import { AppComponent } from './app.component';
 import { PhotoThumbComponent } from './photo-thumb/photo-thumb.component';
@@ -15,7 +15,7 @@ import { ViewComponent } from './view/view.component';
 
 import { routes } from './app.routes';
 
-export const cloudinaryLib = {
+const cloudinaryLib = {
   Cloudinary: Cloudinary
 };
 
@@ -27,10 +27,13 @@ export const cloudinaryLib = {
     ViewComponent
   ],
   imports: [
+    CloudinaryModule,
     BrowserModule,
     FormsModule,
     HttpModule,
-    CloudinaryModule.forRoot(cloudinaryLib, { cloud_name: 'elsmore-me'}),
+    CloudinaryModule.forRoot(cloudinaryLib, {
+      cloud_name: 'elsmore-me'
+    }),
     RouterModule.forRoot(routes)
   ],
   providers: [],
